@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+        <meta charset="UTF-8" />
+        <script>
+         
+         function somar(){
+            /*O document.getElementById().value  vai resgatar o valor passado no id informado. Também pode ser resgatado outros tipos de valores.**/
+           const n1 = document.getElementById('n1').value
+           const n2 = document.getElementById('n2').value
+           
+           const soma = parseInt(n1) + parseInt(n2)
+
+           //innerHTML sobreescreve o que estiver no html
+           document.getElementById('resultado').innerHTML = "A soma dos números é " + soma
+
+         }
+
+        </script>
+    </head>
+    <body>
+
+        <form action="">
+
+            N1: <input type="text" id="n1" /><br>
+            N2: <input type="text" id="n2" /><br>
+
+            <input type="button" value="somar" onclick="somar()">
+
+            <h1 id="resultado">... </h1>
+            
+        </form>
+
+    </body>
+</html>
